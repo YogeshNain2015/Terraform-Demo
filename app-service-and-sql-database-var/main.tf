@@ -11,9 +11,6 @@ provider "azurerm" {
 }
 
 
-
-
-
 resource "azurerm_resource_group" "RG-Terraform" {
   name     = "terraform-resource-group"
   location = "West Europe"
@@ -70,4 +67,5 @@ resource "azurerm_sql_database" "test" {
   tags = {
     environment = "production"
   }
+  
 }
